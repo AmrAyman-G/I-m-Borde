@@ -12,6 +12,7 @@ import UIKit
 struct ActivityData: Codable{
     let activity : String
 }
+// Hello
 
 struct ActivityText{
     let text:String
