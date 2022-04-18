@@ -6,18 +6,19 @@
 //
 
 import UIKit
-//import Alamofire
+import Alamofire
+import SwiftyJSON
 
 
-
-struct ActivityData: Codable{
-    let activity : String
-}
-// Hello
-
-struct ActivityText{
-    let text:String
-}
+//
+//struct ActivityData: Codable{
+//    let activity : String
+//}
+//// Hello
+//
+//struct ActivityText{
+//    let text:String
+//}
 
 class ViewController: UIViewController {
     
@@ -62,45 +63,59 @@ class ViewController: UIViewController {
     }
     
     
-    func fetchText(with type:String){
-
-        let urlString = "https://www.boredapi.com/api/activity?type=\(type)"
-
-        if let url =  URL(string: urlString ) {
-            let session  = URLSession(configuration: .default)
-            let task = session.dataTask(with: url) { data, response, error in
-
-                if let safeData = data {
-                    self.parsJson(with: safeData)
-
-                }
-            }
-            task.resume()
-        }
-    }
-    func parsJson(with data:Data){
-        let decoder = JSONDecoder()
-        do{
-            let decodedData = try decoder.decode(ActivityData.self, from: data)
-            let activity = decodedData.activity
-            print(decodedData)
-            DispatchQueue.main.async {
-                self.labelText.text = activity
-                print(activity)
-            }
-        }catch{
-            print(error)
-        }
-
-    }
+    //    func fetchText(with type:String){
+    //
+    //        let urlString = "https://www.boredapi.com/api/activity?type=\(type)"
+    //
+    //        if let url =  URL(string: urlString ) {
+    //            let session  = URLSession(configuration: .default)
+    //            let task = session.dataTask(with: url) { data, response, error in
+    //
+    //                if let safeData = data {
+    //                    self.parsJson(with: safeData)
+    //
+    //                }
+    //            }
+    //            task.resume()
+    //        }
+    //    }
+    //    func parsJson(with data:Data){
+    //        let decoder = JSONDecoder()
+    //        do{
+    //            let decodedData = try decoder.decode(ActivityData.self, from: data)
+    //            let activity = decodedData.activity
+    //            print(decodedData)
+    //            DispatchQueue.main.async {
+    //                self.labelText.text = activity
+    //                print(activity)
+    //            }
+    //        }catch{
+    //            print(error)
+    //        }
+    //
+    //    }
 }
 
 extension ViewController{
-    func gitTest(){
-        print("Changes Happened")
+    func fetchText(with type:String){
+        let parameter : [String:String] = [
+            "activity" : "String",
+            "text" : type
+        ]
+        AF.request("https://www.boredapi.com/api/activity?type=\(type)", method: .get , parameters: parameter  ).response { response in
+            if let responseValue = response.value! {
+                do{
+                    let textJSON : JSON =  try JSON(data: responseValue)
+                    let textLine = textJSON["activity"].stringValue
+                    self.labelText.text = textLine
+                }catch{
+                    print(error)
+                }
+            }
+        }
     }
-    
 }
+
 
 
 

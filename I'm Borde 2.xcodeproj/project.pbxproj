@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6556FE236A03410B27BA7AE9 /* Pods_I_m_Borde_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA6D0051C9D0D94FEC3EBAD /* Pods_I_m_Borde_2.framework */; };
 		C5F6B28628061BAE00CDC213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6B28528061BAE00CDC213 /* AppDelegate.swift */; };
 		C5F6B28828061BAE00CDC213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6B28728061BAE00CDC213 /* SceneDelegate.swift */; };
 		C5F6B28A28061BAE00CDC213 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6B28928061BAE00CDC213 /* ViewController.swift */; };
@@ -29,7 +30,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C5AD1920280DB82C00A74EE6 /* I'm Borde 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "I'm Borde 2.app"; path = "/Volumes/Things/My Owen build apps/I'm Borde 2/build/Debug-iphoneos/I'm Borde 2.app"; sourceTree = "<absolute>"; };
+		2CD44981C705E3AF60D56904 /* Pods-I'm Borde 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I'm Borde 2.debug.xcconfig"; path = "Target Support Files/Pods-I'm Borde 2/Pods-I'm Borde 2.debug.xcconfig"; sourceTree = "<group>"; };
+		9277CA214537846FD675DD5D /* Pods-I'm Borde 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-I'm Borde 2.release.xcconfig"; path = "Target Support Files/Pods-I'm Borde 2/Pods-I'm Borde 2.release.xcconfig"; sourceTree = "<group>"; };
+		C512DE72280DD115001C30D0 /* I'm Borde 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I'm Borde 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54E82DB280DE4EA0083FEB5 /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alamofire; path = Pods/Alamofire; sourceTree = "<group>"; };
+		C54E82DD280DE5180083FEB5 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Pods/Alamofire/Source/Alamofire.swift; sourceTree = "<group>"; };
 		C5F6B28528061BAE00CDC213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5F6B28728061BAE00CDC213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C5F6B28928061BAE00CDC213 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +42,7 @@
 		C5F6B28E28061BAF00CDC213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5F6B29128061BAF00CDC213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5F6B29328061BAF00CDC213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA6D0051C9D0D94FEC3EBAD /* Pods_I_m_Borde_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_I_m_Borde_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,16 +50,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6556FE236A03410B27BA7AE9 /* Pods_I_m_Borde_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		107D34641F39DB6AA5AA3274 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CD44981C705E3AF60D56904 /* Pods-I'm Borde 2.debug.xcconfig */,
+				9277CA214537846FD675DD5D /* Pods-I'm Borde 2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		558D3EC9F43D735AB7FB730B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBA6D0051C9D0D94FEC3EBAD /* Pods_I_m_Borde_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5F6B27928061BAE00CDC213 = {
 			isa = PBXGroup;
 			children = (
+				C54E82DD280DE5180083FEB5 /* Alamofire.swift */,
+				C54E82DB280DE4EA0083FEB5 /* Alamofire */,
 				C5F6B28428061BAE00CDC213 /* I'm Borde 2 */,
+				107D34641F39DB6AA5AA3274 /* Pods */,
+				558D3EC9F43D735AB7FB730B /* Frameworks */,
+				C512DE72280DD115001C30D0 /* I'm Borde 2.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +112,7 @@
 				C5F6B27F28061BAE00CDC213 /* Frameworks */,
 				C5F6B28028061BAE00CDC213 /* Resources */,
 				C53629E8280DA26300785D81 /* Embed Frameworks */,
+				6CBDC4AF09DAFF196DCBB7E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,7 +120,7 @@
 			);
 			name = "I'm Borde 2";
 			productName = "I'm Borde 2";
-			productReference = C5AD1920280DB82C00A74EE6 /* I'm Borde 2.app */;
+			productReference = C512DE72280DD115001C30D0 /* I'm Borde 2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,6 +190,23 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CBDC4AF09DAFF196DCBB7E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-I'm Borde 2/Pods-I'm Borde 2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-I'm Borde 2/Pods-I'm Borde 2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-I'm Borde 2/Pods-I'm Borde 2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -248,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -304,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -317,6 +364,7 @@
 		};
 		C5F6B29728061BAF00CDC213 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CD44981C705E3AF60D56904 /* Pods-I'm Borde 2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -332,7 +380,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,6 +396,7 @@
 		};
 		C5F6B29828061BAF00CDC213 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9277CA214537846FD675DD5D /* Pods-I'm Borde 2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -363,7 +412,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
