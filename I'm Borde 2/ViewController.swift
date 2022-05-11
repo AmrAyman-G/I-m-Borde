@@ -14,9 +14,7 @@ struct ActivityData: Codable{
 }
 // Hello
 
-struct ActivityText{
-    let text:String
-}
+
 
 class ViewController: UIViewController {
     
