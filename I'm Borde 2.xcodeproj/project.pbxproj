@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C520B76B282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.48.png in Resources */ = {isa = PBXBuildFile; fileRef = C520B769282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.48.png */; };
+		C520B76C282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.41.png in Resources */ = {isa = PBXBuildFile; fileRef = C520B76A282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.41.png */; };
 		C5F6B28628061BAE00CDC213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6B28528061BAE00CDC213 /* AppDelegate.swift */; };
 		C5F6B28828061BAE00CDC213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6B28728061BAE00CDC213 /* SceneDelegate.swift */; };
 		C5F6B28A28061BAE00CDC213 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F6B28928061BAE00CDC213 /* ViewController.swift */; };
@@ -29,7 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C5AD1920280DB82C00A74EE6 /* I'm Borde 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "I'm Borde 2.app"; path = "/Volumes/Things/My Owen build apps/I'm Borde 2/build/Debug-iphoneos/I'm Borde 2.app"; sourceTree = "<absolute>"; };
+		C520B768282B546D00CAA56B /* I'm Borde 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I'm Borde 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C520B769282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.48.png"; sourceTree = "<group>"; };
+		C520B76A282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.41.png"; sourceTree = "<group>"; };
 		C5F6B28528061BAE00CDC213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5F6B28728061BAE00CDC213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C5F6B28928061BAE00CDC213 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				C5F6B28428061BAE00CDC213 /* I'm Borde 2 */,
+				C520B768282B546D00CAA56B /* I'm Borde 2.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,8 @@
 				C5F6B28E28061BAF00CDC213 /* Assets.xcassets */,
 				C5F6B29028061BAF00CDC213 /* LaunchScreen.storyboard */,
 				C5F6B29328061BAF00CDC213 /* Info.plist */,
+				C520B76A282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.41.png */,
+				C520B769282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.48.png */,
 			);
 			path = "I'm Borde 2";
 			sourceTree = "<group>";
@@ -90,7 +97,7 @@
 			);
 			name = "I'm Borde 2";
 			productName = "I'm Borde 2";
-			productReference = C5AD1920280DB82C00A74EE6 /* I'm Borde 2.app */;
+			productReference = C520B768282B546D00CAA56B /* I'm Borde 2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +139,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5F6B29228061BAF00CDC213 /* LaunchScreen.storyboard in Resources */,
+				C520B76C282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.41.png in Resources */,
 				C5F6B28F28061BAF00CDC213 /* Assets.xcassets in Resources */,
+				C520B76B282B58B300CAA56B /* Simulator Screen Shot - iPhone 11 - 2022-05-11 at 04.35.48.png in Resources */,
 				C5F6B28D28061BAE00CDC213 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
